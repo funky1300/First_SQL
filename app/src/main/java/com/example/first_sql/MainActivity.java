@@ -15,9 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonAdd = findViewById(R.id.button_add);
 
-        // מאזין ללחיצה על הכפתור
         buttonAdd.setOnClickListener(v -> {
-            // פתיחת המסך להוספת משתמש
             Intent intent = new Intent(MainActivity.this, AddUserActivity.class);
             startActivity(intent);
         });
